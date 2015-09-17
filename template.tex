@@ -1,0 +1,67 @@
+\documentclass[a4paper, 10pt]{article}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{listings}
+\usepackage{graphicx}
+\usepackage{framed}
+\usepackage{lastpage}
+\usepackage[margin=1in]{geometry}
+
+\setlength\parindent{0pt}
+
+\newcommand{\n}{\par \smallskip} %End line.
+\newcommand{\f}{\n \hrule \n} %Draw horizontal line.
+\newcommand{\s}[1]{\textbf{#1}} %\s{Bold}
+\newcommand{\img}[2]{\begin{figure}[htp]\centering\includegraphics[scale=#2]{#1}\end{figure}} %Insert image. \img{name}{scale (from 0 to 1)}
+\newcommand{\code}[1]{\begin{framed} \lstinputlisting{#1} \end{framed}} %Box something.
+\newcommand{\ohm}{\Omega} %Resistor symbol/ capital omega.
+\newcommand{\w}{\omega} %Frequency symbol/ small omega.
+\newcommand{\e}[1]{e^{#1}} %Exponential to the power of _.. \e{pi}
+\newcommand{\fr}[1]{\mathfrak{F}\left\{{#1}\right\}} %Fancy looking F to represent the Fourier operator.
+\newcommand{\ifr}[1]{\mathfrak{I}\mathfrak{F}\left\{{#1}\right\}} %Fancy IF to represent the Inverse Fourier operator.
+\newcommand{\F}{\mathbb{F}} %For general fields.
+\newcommand{\R}{\mathbb{R}} %For the field of real numbers.
+\newcommand{\C}{\mathbb{C}} %For the field of complex numbers.
+
+\newcommand{\TODO}[1]{\color{red} \textbf{TODO} {#1} \color{black}} %\TODO{text}. Leave todo notes as needed.
+
+\begin{document}
+
+\s{\large Subject - Homework X} \hfill Name \n
+This homework has $\pageref{LastPage}$ pages. \hfill Student ID\f
+
+\begin{enumerate}
+
+\item %Q1
+    \TODO{}
+
+\item %Q2
+    \TODO{}
+
+\item %Q3
+    \TODO{}
+
+\item %Q4
+    \TODO{}
+
+\item %Q5
+    \TODO{}
+
+\item %Q6
+    \TODO{}
+
+\item %Q7
+    \TODO{}
+
+\item %Q8
+    \TODO{}
+
+\item %Q9
+    \TODO{}
+
+\end{enumerate} 
+
+\end{document}
