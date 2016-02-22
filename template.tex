@@ -1,37 +1,50 @@
 \documentclass[a4paper, 10pt]{article}
 
 \usepackage{amsmath}
-\usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{color}
+\usepackage{amsfonts}
 \usepackage{listings}
 \usepackage{graphicx}
 \usepackage{framed}
 \usepackage{lastpage}
+\usepackage{fancyvrb}
+\usepackage{mathpazo} 
+\usepackage{eulervm}
+\usepackage{cancel}
 \usepackage[margin=1in]{geometry}
 
 \setlength\parindent{0pt}
 
-\newcommand{\n}{\par \smallskip} %End line.
-\newcommand{\f}{\n \hrule \n} %Draw horizontal line.
-\newcommand{\s}[1]{\textbf{#1}} %\s{Bold}
-\newcommand{\img}[2]{\begin{figure}[htp]\centering\includegraphics[scale=#2]{#1}\end{figure}} %Insert image. \img{name}{scale (from 0 to 1)}
-\newcommand{\code}[1]{\begin{framed} \lstinputlisting{#1} \end{framed}} %Box something.
-\newcommand{\ohm}{\Omega} %Resistor symbol/ capital omega.
-\newcommand{\w}{\omega} %Frequency symbol/ small omega.
-\newcommand{\e}[1]{e^{#1}} %Exponential to the power of _.. \e{pi}
-\newcommand{\fr}[1]{\mathfrak{F}\left\{{#1}\right\}} %Fancy looking F to represent the Fourier operator.
-\newcommand{\ifr}[1]{\mathfrak{I}\mathfrak{F}\left\{{#1}\right\}} %Fancy IF to represent the Inverse Fourier operator.
-\newcommand{\F}{\mathbb{F}} %For general fields.
-\newcommand{\R}{\mathbb{R}} %For the field of real numbers.
-\newcommand{\C}{\mathbb{C}} %For the field of complex numbers.
+\newcommand{\n}{\par \smallskip \par}
+\newcommand{\f}{\smallskip \hrule \smallskip}
+\newcommand{\s}[1]{\textbf{#1}.}
+\newcommand{\e}[1]{e^{#1}}
+\newcommand{\code}[1]{\VerbatimInput{#1}}
+\newcommand{\w}{\omega}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\po}[2]{\mathcal{P}_{#1}\left({#2}\right)} %Polynomial
+\newcommand{\lm}[2]{\mathcal{L}\left(#1, #2\right)}    %Linear map
+\newcommand{\im}[1]{\:\text{Im}\left({#1}\right)} %Imaginary
+\newcommand{\re}[1]{\:\text{Re}\left({#1}\right)} %Real
+\newcommand{\fr}[1]{\:\mathcal{F}\left\{{#1}\right\}} %FT
+\newcommand{\ifr}[1]{\:\mathcal{F}^{-1}\left\{{#1}\right\}} %IFT
+\newcommand{\qed}{\hfill $\square$} %QED
+\newcommand{\nul}[1]{\text{null}\left(#1\right)} %null(T)
+\newcommand{\range}[1]{\text{range}\left(#1\right)} %Range(T)
+\newcommand{\ip}[1]{\left\langle#1\right\rangle} %Inner product
+\newcommand{\mat}[1]{\begin{bmatix} #1\end{bmatrix}} %Matrix
 
-\newcommand{\TODO}[1]{\color{red} \textbf{TODO} {#1} \color{black}} %\TODO{text}. Leave todo notes as needed.
+\newcommand{\TODO}[1]{\color{red} \textbf{TODO} {#1} \color{black}}
 
 \begin{document}
 
-\s{\large Subject - Homework X} \hfill Name \n
-This homework has $\pageref{LastPage}$ pages. \hfill Student ID\f
+\s{\large Subject - Homework X} \hfill Name \\
+This homework has $\pageref{LastPage}$ pages. \hfill Student ID/GSI name\f
 
 \begin{enumerate}
 
@@ -55,13 +68,13 @@ This homework has $\pageref{LastPage}$ pages. \hfill Student ID\f
 
 \item %Q7
     \TODO{}
-
+   
 \item %Q8
     \TODO{}
 
 \item %Q9
     \TODO{}
 
-\end{enumerate} 
+\end{enumerate}
 
 \end{document}
