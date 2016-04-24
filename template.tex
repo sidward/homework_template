@@ -2,6 +2,7 @@
 
 \usepackage{amsmath}
 \usepackage{amssymb}
+\usepackage{dsfont}
 \usepackage{color}
 \usepackage{amsfonts}
 \usepackage{listings}
@@ -22,7 +23,7 @@
 \newcommand{\f}{\smallskip \hrule \smallskip}
 \newcommand{\s}[1]{\textbf{#1}.}
 \newcommand{\e}[1]{e^{#1}}
-\newcommand{\code}[1]{\VerbatimInput{#1}}
+\newcommand{\code}[1]{\lstinputlisting[breaklines, frame=single]{#1}} %language =
 \newcommand{\w}{\omega}
 \newcommand{\Z}{\mathbb{Z}}
 \newcommand{\Q}{\mathbb{Q}}
@@ -35,6 +36,9 @@
 \newcommand{\re}[1]{\:\text{Re}\left({#1}\right)} %Real
 \newcommand{\fr}[1]{\:\mathcal{F}\left\{{#1}\right\}} %FT
 \newcommand{\ifr}[1]{\:\mathcal{F}^{-1}\left\{{#1}\right\}} %IFT
+\newcommand{\sinc}[1]{\text{sinc}\left({#1}\right)} %Sinc
+\newcommand{\rect}[1]{\text{rect}\left({#1}\right)} %Rect
+\newcommand{\E}[1]{\mathds{E}\left\{{#1}\right\}} %Expected Value
 \newcommand{\qed}{\hfill $\square$} %QED
 \newcommand{\nul}[1]{\text{null}\left(#1\right)} %null(T)
 \newcommand{\range}[1]{\text{range}\left(#1\right)} %Range(T)
